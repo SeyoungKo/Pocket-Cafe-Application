@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="01f02213-8bde-4575-afe6-845fd84bc995" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/JoinGuestActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/JoinGuestActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/JoinManagerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/JoinManagerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/LoginActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/edittext1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/edittext1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_join_guest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_join_guest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_join_manager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_join_manager.xml" afterDir="false" />
@@ -70,5 +65,11 @@
       <updated>1617345874783</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="385" y="178" width="670" height="676" key="search.everywhere.popup" timestamp="1617346972616">
+      <screen x="0" y="23" width="1440" height="831" />
+    </state>
+    <state x="385" y="178" width="670" height="676" key="search.everywhere.popup/0.23.1440.831@0.23.1440.831" timestamp="1617346972616" />
   </component>
 </project>
