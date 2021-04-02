@@ -290,4 +290,7 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
+### workspace.xml ###
+./pocket_cafe_client/.idea/workspace.xml
+
 # End of https://www.toptal.com/developers/gitignore/api/android,macos,androidstudio,gradle,maven,java,java-web
