@@ -26,6 +26,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import util.IpInfo;
+
 public class JoinGuestActivity extends AppCompatActivity {
 
     EditText et_id, et_pwd, et_confirmpwd, et_tel, et_nickname;
@@ -188,8 +190,7 @@ public class JoinGuestActivity extends AppCompatActivity {
         String id = et_id.getText().toString();
         String parameter = "id=" + id;
 
-        String ip = "192.168.105.89";
-        String serverip = "http://" + ip + ":9090/PocketCafeJSP/check_id.do";
+        String serverip = IpInfo.SERVERIP + "check_id.do";
 
         String result = "";
 
@@ -261,8 +262,7 @@ public class JoinGuestActivity extends AppCompatActivity {
         String tel = et_tel.getText().toString();
 
         String parameter = "id=" + id + "&pwd=" + pwd + "&nickname=" + nickname + "&tel=" + tel;
-        String ip = "192.168.105.89";
-        String serverip = "http://" + ip + ":9090/PocketCafeJSP/join_guest.do";
+        String serverip = IpInfo.SERVERIP + "join_guest.do";
 
         String result = "";
 
@@ -315,7 +315,7 @@ public class JoinGuestActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "회원가입실패", Toast.LENGTH_SHORT).show();
             }
 
-            handler.sendEmptyMessageDelayed(0, 2000);
+            handler.sendEmptyMessageDelayed(0, 1500);
 
         }//onPostExecute()
 
