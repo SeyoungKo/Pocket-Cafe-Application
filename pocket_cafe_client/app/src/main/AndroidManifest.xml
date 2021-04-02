@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ysw.ysw34.pocketcafe">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
 
     <application
         android:allowBackup="true"
@@ -11,16 +15,69 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.noWindowBar">
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".JoinSelectActivity" />
-        <activity android:name=".JoinGuestActivity" />
-        <activity android:name=".JoinManagerActivity"></activity>
+        <activity
+            android:name=".JoinSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JoinGuestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".JoinManagerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ManagerMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManagerOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManagerMypageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManagerChangepwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ManagerChangeinfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ManagerStoreActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ManagerMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchCafeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GpsSearchCafeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CafeInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CafeMenuInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyOrderActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
