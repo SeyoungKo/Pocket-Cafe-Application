@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerStoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#c0392b">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_back"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/logo_img" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="here\u0026now"
+                    android:textSize="19dp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="매장 관리"
+                android:textColor="#000"
+                android:textSize="27dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="매장 이름, 주소, 사진 등 정보를 관리하세요."
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 매장명"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/et_storename"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 매장 주소"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/et_storeloc"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 매장 전화번호"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/et_storetel"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 매장 영업시간"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/et_storeoc"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext2"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 매장 사진"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="(이미지를 한번더 터치하시면 삭제할 수 있습니다.)"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:background="#e0e0e0"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/img_add1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_add_picture"/>
+
+                <TextView
+                    android:id="@+id/tv_add1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="첨부할 사진을 선택하세요."
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="115dp"
+                    android:textSize="18dp"
+                    android:textColor="#000"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:background="#e0e0e0"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/img_add2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_add_picture"/>
+
+                <TextView
+                    android:id="@+id/tv_add2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="첨부할 사진을 선택하세요."
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="115dp"
+                    android:textSize="18dp"
+                    android:textColor="#000"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* 매장 소개"
+                android:textSize="17dp"
+                android:textColor="#000"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="15dp"/>
+
+            <EditText
+                android:id="@+id/et_storeintro"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:lines="6"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:maxHeight="150dp"
+                android:background="@drawable/edittext2"
+                android:padding="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"/>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#c0392b"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="저장"
+                android:textSize="20dp"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

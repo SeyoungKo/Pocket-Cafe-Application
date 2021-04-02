@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+        <TextView
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문하기"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="#434343"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ordercancel"
+            android:layout_marginLeft="280dp"
+           android:background="#00ffffff"
+            android:id="@+id/closedialog"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택하신 음료 : "
+        android:textSize="18dp"
+        android:textColor="#434343"
+        android:id="@+id/cdrink"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/cCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="수량 : "
+            android:textColor="#434343"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_count_plus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="+"/>
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/btn_count_minus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ice / Hot : "
+            android:textSize="18dp"
+            android:textColor="#434343"
+            android:id="@+id/chotIce"/>
+
+        <RadioGroup
+            android:id="@+id/radio_hotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hot"/>
+
+            <RadioButton
+                android:id="@+id/radio_ice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ice"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사이즈 : "
+            android:textSize="18dp"
+            android:textColor="#434343"
+            android:id="@+id/csize"/>
+
+        <RadioGroup
+            android:id="@+id/radio_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Large"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_xlarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xlarge"
+                android:layout_marginRight="10dp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TakeOut"
+            android:textSize="18dp"
+            android:textColor="#434343"
+            android:id="@+id/ctakeout"/>
+
+       <RadioGroup
+           android:id="@+id/radio_takeout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <RadioButton
+               android:layout_marginTop="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Yes"
+               android:id="@+id/tyes"/>
+
+
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:id="@+id/tno"/>
+
+    </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="30dp"
+        android:text="000원"
+        android:textSize="18dp"
+        android:textColor="#c0392b"
+        android:textStyle="bold"
+        android:id="@+id/totalPrice"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c0392b"
+        android:text="장바구니에 담기"
+        android:textColor="#fff"
+        android:id="@+id/btn_save"
+        android:textSize="18dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#c0392b">
+
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/logo_img" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="here\u0026now"
+                    android:textSize="19dp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_menu"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/btn_menu"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:paddingTop="80dp"
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+         >
+
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:background="@drawable/edittext1"
+        android:id="@+id/et_search"
+        android:inputType="text"/>
+
+        <Button
+            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/btn_search"
+            android:background="#00ffffff"
+            android:id="@+id/btn_search"
+            />
+        </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나와 가까운 카페찾기"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:textColor="#e2000000"
+        android:id="@+id/search_gps"
+        />
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="검색 결과가 없습니다"
+            android:id="@+id/noResult"
+            android:textAlignment="center"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/myListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/listview1"/>
+
+    </LinearLayout>
+
+    <!--서랍 레이아웃-->
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e0e0e0"
+        android:id="@+id/drawer"
+        android:layout_gravity="start">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/drawer"/>
+
+                <TextView
+                    android:id="@+id/tv_drawer_greet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="회원님, 안녕하세요!"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="40dp"
+                    android:textColor="#fff"/>
+
+            </FrameLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/cancel"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#00ffffff"
+            android:id="@+id/closedrawer"/>
+
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/lv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/menu"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="로그아웃"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:textSize="17dp"
+            android:textColor="#3b3b3b"
+            android:layout_marginBottom="13dp"
+            android:id="@+id/Logout"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

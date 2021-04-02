@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가게명"
+        android:textSize="15dp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/tv_orderlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문리스트"
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_ordertime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문시간"
+        android:textSize="11dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가격"
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="완료여부"
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"/>
+
+
+
+</LinearLayout>
