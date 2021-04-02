@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="menu">
+
+	<select id="menu_list" parameterType="int" resultType="vo.MenuVO">
+		select * from menu where store_idx = #{ store_idx } order by idx asc
+	</select>
+	
+	<select id="menu_one" parameterType="int" resultType="vo.MenuVO">
+		select * from menu where idx = #{ idx }
+	</select>
+	
+	<insert id="insert" parameterType="vo.MenuVO">
+		insert into menu values ( menu_idx.nextVal, #{ store_idx }, #{ name }, #{ price }, #{ photo }, #{ ice }, #{ hot }, #{ regular }, #{ large }, #{ xlarge }, #{ takeout } )
+	</insert>
+	
+	<delete id="delete" parameterType="int">
+		delete from menu where idx = #{ idx }
+	</delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
