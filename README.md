@@ -1,6 +1,6 @@
 
 # PocketCafe Application 🍰 ☕️ 🍵
-카페 테이크아웃 사이렌오더 & 관리 안드로이드 애플리케이션입니다.<br>
+카페 사이렌오더 & 관리 안드로이드 애플리케이션입니다.<br>
 
 - <strong>Admin Page</strong>
 
