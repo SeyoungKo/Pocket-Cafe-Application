@@ -7,8 +7,8 @@
 
 - <strong>User Page</strong>
 
-![image](https://user-images.githubusercontent.com/39934875/113481704-07d14700-94d6-11eb-8b1b-9ca69c6ccef6.png)
- 
+![image](https://user-images.githubusercontent.com/39934875/113482034-ba55d980-94d7-11eb-951d-7c1048e4feac.png)
+
 
 ### 1. 프로젝트 소개 & 환경
 - Java
