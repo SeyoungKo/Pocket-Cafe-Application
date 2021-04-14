@@ -54,10 +54,6 @@ public class SearchGPSAdapter extends ArrayAdapter<SearchVO> implements AdapterV
         tel.setText("전화번호: " + list.get(position).getTel());
         km.setText("나와의 거리: 약" + String.format("%.3f", kmFloat) + "km");
 
-    /*    gpsLoc = Integer.parseInt((list.get(position).getKm().substring(1,3)))*1000;
-
-        km.setText("나와의 거리:"+"약"+gpsLoc+"m");
-*/
         return convertView;
     }
 

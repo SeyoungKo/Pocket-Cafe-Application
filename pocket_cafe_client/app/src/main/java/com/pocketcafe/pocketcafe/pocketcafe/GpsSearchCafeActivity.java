@@ -335,7 +335,6 @@ public class GpsSearchCafeActivity extends AppCompatActivity {
             Criteria criteria = new Criteria();
             String pv = lm.getBestProvider(criteria, false);
             Location location  = lm.getLastKnownLocation(pv);
-            //txt_gpsAddr.setText(+gpslat+","+gpslng);
 
             if( location != null ) {
                 txt_gpsAddr.setTextSize(20);
@@ -382,11 +381,9 @@ public class GpsSearchCafeActivity extends AppCompatActivity {
         // 위치정보를 활용하기 위한 구글 API 객체
         Geocoder geocoder = new Geocoder(this, Locale.getDefault());
 
-        // 주소 목록을 담기 위한 List
         List<Address> list = null;
 
         try {
-            // 주소 목록을 가져온다. --> 위도,경도,조회 갯수
             list = geocoder.getFromLocation(lat, lng, 1);
         } catch (Exception e) {
             e.printStackTrace();
@@ -399,8 +396,6 @@ public class GpsSearchCafeActivity extends AppCompatActivity {
         }
 
         if (list.size() > 0) {
-            // getFromLocation() 메서드에서 결과를 하나만 요청했기 때문에,
-            // 반복처리는 필요 없다.
             Address addr = list.get(0);
             address = "";
 

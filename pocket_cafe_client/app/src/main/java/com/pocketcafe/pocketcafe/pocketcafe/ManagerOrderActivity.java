@@ -63,8 +63,6 @@ public class ManagerOrderActivity extends AppCompatActivity {
             }
         });
 
-        //Handler.sendEmptyMessageDelayed(0, 30000);
-
     }
 
     public class OrderSearch extends AsyncTask<String, Void, ArrayList<OrdersVO>> {

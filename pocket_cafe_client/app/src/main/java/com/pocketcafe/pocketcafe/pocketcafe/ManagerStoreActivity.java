@@ -157,7 +157,6 @@ public class ManagerStoreActivity extends AppCompatActivity {
                 case R.id.img1:
 
                     if( bimg1 ) {
-
                         builder.setNegativeButton("아니요", null);
                         builder.setPositiveButton("네", new DialogInterface.OnClickListener() {
                             @Override
@@ -173,7 +172,6 @@ public class ManagerStoreActivity extends AppCompatActivity {
                         builder.show();
 
                     }else if( exist_img1 && !remove_img1 ){
-
                         builder.setNegativeButton("아니요", null);
                         builder.setPositiveButton("네", new DialogInterface.OnClickListener() {
                             @Override
@@ -196,7 +194,6 @@ public class ManagerStoreActivity extends AppCompatActivity {
                 case R.id.img2:
 
                     if( bimg2 ){
-
                         builder.setNegativeButton("아니요", null);
                         builder.setPositiveButton("네", new DialogInterface.OnClickListener() {
                             @Override
@@ -212,7 +209,6 @@ public class ManagerStoreActivity extends AppCompatActivity {
                         builder.show();
 
                     }else if( exist_img2 && !remove_img2 ){
-
                         builder.setNegativeButton("아니요", null);
                         builder.setPositiveButton("네", new DialogInterface.OnClickListener() {
                             @Override
@@ -249,7 +245,6 @@ public class ManagerStoreActivity extends AppCompatActivity {
                     }else if( store_loc.equals("") ){
                         Toast.makeText( getApplicationContext(), "주소를 입력하세요.", Toast.LENGTH_SHORT ).show();
                     }else{
-
                         try {
                             address = coder.getFromLocationName( store_loc, 5 );
                             Address store_address = address.get(0);
@@ -258,46 +253,35 @@ public class ManagerStoreActivity extends AppCompatActivity {
                         } catch (Exception e) {
                             Log.i( "MY", e.toString() );
                         }
-
                         if (bimg1) {
                             //img1 서버에 저장
                             new UploadPhotoAsync().execute(img1Path, "img1");
                         } else {
-
                             if( exist_img1 ) {
-
                                 if( remove_img1 ){
                                     new UpdatePhoto1Async().execute("");
-                                }
-                                else {
-
+                                } else {
                                     if (bimg2) {
                                         new UploadPhotoAsync().execute(img2Path, "img2");
                                     } else {
-
                                         if (exist_img2) {
-
                                             if( remove_img2 ){
                                                 new UpdatePhoto2Async().execute("");
                                             }else {
                                                 new ChangeStoreInfoAsync().execute(store_name, store_loc, store_tel, store_openclose, store_intro, store_lat, store_lng);
                                             }
-
                                         } else {
                                             new UpdatePhoto2Async().execute("");
                                         }
                                     }
                                 }
-
                             }else {
                                 new UpdatePhoto1Async().execute("");
                             }
                         }
 
                     }
-
                     break;
-
             }
 
         }

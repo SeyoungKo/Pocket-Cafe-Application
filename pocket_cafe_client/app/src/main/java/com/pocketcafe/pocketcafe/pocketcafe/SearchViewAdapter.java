@@ -38,13 +38,10 @@ public class SearchViewAdapter extends ArrayAdapter<SearchVO> implements Adapter
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        // [resource 먼저 객체화]
         LayoutInflater linf = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-
-        //1) 무엇을 객체화 하고 싶은지
         convertView = linf.inflate(resource, null);
-       // vo = list.get(position);
+
         TextView storename = convertView.findViewById(R.id.storename);
         TextView openclose = convertView.findViewById(R.id.openclose);
         TextView location = convertView.findViewById(R.id.location);

@@ -40,7 +40,7 @@ public class SearchCafeActivity extends AppCompatActivity {
     ListView myListView, lv_menu;
     Button btn_menu, btn_search, closedrawer;
     EditText et_search;
-    TextView txt_gpsAddr, search_gps, noResult, tv_drawer_greet, logout; //search_gps : 버튼처럼 clickable임
+    TextView txt_gpsAddr, search_gps, noResult, tv_drawer_greet, logout; 
     SearchViewAdapter adapter;
 
     int start = 1; //검색은 1부터
@@ -79,7 +79,6 @@ public class SearchCafeActivity extends AppCompatActivity {
         myListView = findViewById(R.id.myListView);
         lv_menu = findViewById( R.id.lv_menu );
         et_search = findViewById(R.id.et_search);
-        //txt_gpsAddr = findViewById(R.id.txt_gpsAddr);
         search_gps = findViewById(R.id.search_gps);
         layout = findViewById(R.id.layout);
         drawer = findViewById(R.id.drawer);
@@ -263,7 +262,7 @@ public class SearchCafeActivity extends AppCompatActivity {
                 String serverip = IpInfo.SERVERIP + "SearchKeyword.do";
 
                 // 접속할 서버 주소 (이클립스에서 android.jsp 실행시 웹브라우저 주소)
-                //URL url = new URL("http://192.168.113.1:9090/PocketCafeJSP/SearchKeyword.do");
+                //URL url = new URL("http://ip주소:9090/PocketCafeJSP/SearchKeyword.do");
                 URL url = new URL(serverip);
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -283,7 +282,6 @@ public class SearchCafeActivity extends AppCompatActivity {
                     BufferedReader reader = new BufferedReader(tmp);
                     StringBuffer buffer = new StringBuffer();
 
-
                     // jsp에서 보낸 값을 받는 부분
                     while ((str = reader.readLine()) != null) {
                         buffer.append(str);
@@ -293,6 +291,7 @@ public class SearchCafeActivity extends AppCompatActivity {
                     JSONObject jsonObject = null;
 
                     list = new ArrayList();
+
                     for (int i = 0; i < jsonArray.length(); i++) {
                         jsonObject = jsonArray.getJSONObject(i);
                         SearchVO vo = new SearchVO();
@@ -311,13 +310,6 @@ public class SearchCafeActivity extends AppCompatActivity {
                     }
                     Log.i("abc", list.get(0).getName());
 
-                  /*  runOnUiThread(new Runnable() {
-                        @Override           //메인이 갱신되는 시점
-                        public void run() {
-                            txtList.setText(result[0]);  //텍스트만 갱신하려면
-                        }
-                    });*/
-
                     receiveMsg = buffer.toString();
                 } else {
                     // 통신 실패
@@ -328,7 +320,7 @@ public class SearchCafeActivity extends AppCompatActivity {
             }
 
             //jsp로부터 받은 리턴 값
-            return list; // vo저장한 list반환
+            return list;
         } // doInBackground()
 
     }//Async

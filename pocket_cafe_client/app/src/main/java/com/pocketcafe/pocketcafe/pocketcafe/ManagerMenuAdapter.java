@@ -151,7 +151,6 @@ public class ManagerMenuAdapter extends ArrayAdapter<MenuVO> implements AdapterV
     public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
 
         final int selected_idx = i;
-        //Log.i("MY", "1:"+i);
 
         final MenuVO selected_vo = list.get(i);
 
@@ -276,8 +275,6 @@ public class ManagerMenuAdapter extends ArrayAdapter<MenuVO> implements AdapterV
 
             if ( s.equals("success") ){
 
-                //list.remove(selected_idx);
-                //Log.i("MY", "2:"+selected_idx);
                 ManagerMenuActivity.dialog.dismiss();
                 list.remove(selected_idx);
                 notifyDataSetChanged();

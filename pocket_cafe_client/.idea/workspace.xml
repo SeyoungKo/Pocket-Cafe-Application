@@ -1,12 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="01f02213-8bde-4575-afe6-845fd84bc995" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/edittext1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/edittext1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_join_guest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_join_guest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_join_manager.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_join_manager.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/CafeInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/CafeInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/CafeMenuInfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/CafeMenuInfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/CafeMenuInfoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/CafeMenuInfoAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/GpsSearchCafeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/GpsSearchCafeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/JoinGuestActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/JoinGuestActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/JoinManagerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/JoinManagerActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/JoinSelectActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/JoinSelectActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/ManagerChangeinfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/ManagerChangeinfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/ManagerChangepwdActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/ManagerChangepwdActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/ManagerMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/ManagerMainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/ManagerMenuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/ManagerMenuActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/ManagerMenuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/ManagerMenuAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/ManagerMypageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/ManagerMypageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/ManagerOrderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/ManagerOrderActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/ManagerStoreActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/ManagerStoreActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/MemberInfoParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/MemberInfoParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/MenuInfoParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/MenuInfoParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/MenuVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/MenuVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/MyOrderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/MyOrderActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/MyOrderAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/MyOrderAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/OrderAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/OrderAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/OrderMenuActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/OrderMenuActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/OrderMenuAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/OrderMenuAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/OrdersVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/OrdersVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/SearchCafeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/SearchCafeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/SearchGPSAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/SearchGPSAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/SearchVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/SearchVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/SearchViewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/SearchViewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ysw/ysw34/pocketcafe/StoreInfoParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pocketcafe/pocketcafe/pocketcafe/StoreInfoParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +121,17 @@
       <updated>1617345874783</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="385" y="178" width="670" height="676" key="search.everywhere.popup" timestamp="1617346972616">

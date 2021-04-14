@@ -96,9 +96,6 @@ public class CafeMenuInfoActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(ArrayList arrayList) {
-            //*   Log.i("array", String.valueOf(arrayList.size()));*//*
-
-            //  noResult.setVisibility(View.GONE);
             if (adapter == null) {
                 adapter = new CafeMenuInfoAdapter(CafeMenuInfoActivity.this, R.layout.cafemenuinfo_item, arrayList, gridView);
                 gridView.setAdapter(adapter);
@@ -135,8 +132,6 @@ public class CafeMenuInfoActivity extends AppCompatActivity {
                     BufferedReader reader = new BufferedReader(tmp);
                     StringBuffer buffer = new StringBuffer();
 
-
-                    // jsp에서 보낸 값을 받는 부분
                     while ((str = reader.readLine()) != null) {
                         buffer.append(str);
                     }
