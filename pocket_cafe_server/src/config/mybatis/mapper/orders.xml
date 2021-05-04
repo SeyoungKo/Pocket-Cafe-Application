@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="orders">
+
+	<insert id="insert" parameterType="vo.OrdersVO">
+		insert into orders values ( orders_idx.nextVal, #{ geust_idx }, #{ store_idx }, #{ order_list }, #{ price }, sysdate, 0, null)
+	</insert>
+	
+	<select resultType="vo.OrdersVO" parameterType="vo.OrdersVO" id="select_orders">
+		select * from orders where store_idx = #{ store_idx } order by orders_idx
+	</select>
+
+	<update parameterType="int" id="orders_finish">
+		update orders set done = 1, donetime = sysdate where orders_idx = #{ orders_idx } 
+	</update>
+	
+	<select resultType="vo.OrdersVO" parameterType="int" id="select_orders_guest">
+		select * from orders where geust_idx = #{ geust_idx } order by orders_idx
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
